@@ -27,8 +27,7 @@ require (
 	github.com/fortytw2/leaktest v1.3.0 // indirect
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gocql/gocql v0.0.0-20171220143535-56a164ee9f31
-	github.com/gogo/googleapis v1.2.0 // indirect
-	github.com/gogo/status v1.1.0 // indirect
+	github.com/gogo/protobuf v1.2.1 // indirect
 	github.com/golang/mock v1.3.1
 	github.com/google/uuid v1.1.1
 	github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed // indirect
@@ -85,7 +84,7 @@ require (
 	go.uber.org/net/metrics v1.1.0 // indirect
 	go.uber.org/thriftrw v1.20.0
 	go.uber.org/tools v0.0.0-20190618225709-2cfd321de3ee // indirect
-	go.uber.org/yarpc v1.39.0
+	go.uber.org/yarpc v1.37.5-0.20190514020929-6dadc73fb573
 	go.uber.org/zap v1.10.0
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4 // indirect
 	golang.org/x/lint v0.0.0-20190409202823-959b441ac422 // indirect

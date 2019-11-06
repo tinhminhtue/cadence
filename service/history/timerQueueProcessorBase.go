@@ -161,7 +161,7 @@ RetryProcessor:
 		case <-t.shutdownCh:
 			break RetryProcessor
 		default:
-			err := t.internalProcessor()
+			err := t.startProcess()
 			if err != nil {
 				t.logger.Error("processor pump failed with error", tag.Error(err))
 			}
@@ -258,7 +258,7 @@ func (t *timerQueueProcessorBase) notifyNewTimer(
 	}
 }
 
-func (t *timerQueueProcessorBase) internalProcessor() error {
+func (t *timerQueueProcessorBase) startProcess() error {
 	pollTimer := time.NewTimer(backoff.JitDuration(
 		t.config.TimerProcessorMaxPollInterval(),
 		t.config.TimerProcessorMaxPollIntervalJitterCoefficient(),

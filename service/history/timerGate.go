@@ -212,7 +212,7 @@ func (timerGate *RemoteTimerGateImpl) Update(nextTime time.Time) bool {
 	// this means the timer, before stopped, has already fired / never active
 	if !timerGate.currentTime.Before(nextTime) {
 		// next time is <= current time, need to fire immediately
-		// whether to update next wake up time or not is irrelevent
+		// whether to update next wake up time or not is irrelevant
 		timerGate.fire()
 	} else {
 		// next time > current time
